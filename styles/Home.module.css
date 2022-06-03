@@ -12,22 +12,6 @@
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
 .title a {
   color: #0070f3;
   text-decoration: none;
@@ -39,13 +23,20 @@
   text-decoration: underline;
 }
 
-.title {
+.title,
+.subtitle {
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
 }
 
+.subtitle {
+  font-size: 3rem;
+  line-height: 2;
+}
+
 .title,
+.subtitle,
 .description {
   text-align: center;
 }
@@ -70,7 +61,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1200px;
 }
 
 .card {
@@ -82,7 +73,8 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  max-width: 400px;
+  display: inline-block;
 }
 
 .card:hover,
